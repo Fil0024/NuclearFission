@@ -1,0 +1,10 @@
+Obliczenie kanału rejestrowania cząstek alpha tak aby zakres sięgał do około 200 MeV (w celu zaobserwowania produktów rozpadu uranu)
+
+Maksymalny numer kanału: 8191
+Energia alpha (dla 234U który ma największą aktywność): 4,76 MeV
+
+Proporcja
+8191 - 200
+x - 4,76
+
+x=200/4,76*8191=194,9
