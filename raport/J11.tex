@@ -1,0 +1,202 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{icomma}
+\usepackage{subcaption}
+\usepackage{placeins}
+\usepackage{siunitx}
+
+
+% Podwójne klamry są tutaj wymagane!
+\graphicspath{{./figures/}}
+
+\geometry{margin=2.5cm}
+
+\title{{Ćwiczenie J11 - Pomiar widma energetycznego
+fragmentów rozszczepienia $^{236}$U wywołanego
+neutronami termicznymi}}
+\author{Filip Gołębiewski}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+asdgasgdahs asdfasdf asdf asdfasdfasdf adsfa dsasdf. asdgasgdahs asdfasdf asdf asdfasdfasdf adsfa dsasdf.asdgasgdahs asdfasdf asdf asdfasdfasdf adsfa dsasdf.asdgasgdahs asdfasdf asdf asdfasdfasdf adsfa dsasdf.asdgasgdahs asdfasdf asdf asdfasdfasdf adsfa dsasdf.asdgasgdahs asdfasdf asdf asdfasdfasdf adsfa dsasdf.asdgasgdahs asdfasdf asdf asdfasdfasdf adsfa dsasdf.asdgasgdahs asdfasdf asdf asdfasdfasdf adsfa dsasdf.asdgasgdahs asdfasdf asdf asdfasdfasdf adsfa dsasdf.asdgasgdahs asdfasdf asdf asdfasdfasdf adsfa dsasdf.asdgasgdahs asdfasdf asdf asdfasdfasdf adsfa dsasdf.asdgasgdahs asdfasdf asdf asdfasdfasdf adsfa dsasdf.asdgasgdahs asdfasdf asdf asdfasdfasdf adsfa dsasdf.asdgasgdahs asdfasdf asdf asdfasdfasdf adsfa dsasdf.
+\end{abstract}
+
+%%%%%%%%%%%%%%%
+\section{Wstęp}
+
+\subsection{Rozpady \texorpdfstring{$\alpha$}{alfa} jąder uranu}
+
+Podstawowym procesem decydującym o niestabilności ciężkich jąder atomowych, takich jak izotopy uranu, jest rozpad alfa. Polega on na emisji jądra helu ${}^{4}_{2}\text{He}$ (cząstki $\alpha$), co prowadzi do zmniejszenia liczby masowej $A$ o 4 oraz liczby atomowej $Z$ o 2, zgodnie ze schematem:
+
+\begin{equation}
+{}^{A}_{Z}\text{X} \rightarrow {}^{A-4}_{Z-2}\text{Y} + {}^{4}_{2}\alpha
+\end{equation}
+
+\subsection{Szeregi promieniotwórcze izotopów uranu}
+
+Szereg promieniotwórczy to sekwencja kolejnych rozpadów jąder atomowych, w której produkt jednego rozpadu staje się substratem następnego, aż do momentu powstania stabilnego izotopu.
+
+W kontekście detekcji promieniowania $\alpha$ z tarczy uranowej, kluczowe są początkowe elementy szeregów, które charakteryzują się odpowiednio krótkimi czasami życia, aby ich rozpady mogły zostać zarejestrowane w czasie trwania eksperymentu przy użyciu spektrometru. Izotopy uranu najczęściej występujące w przyrodzie należą do dwóch głównych szeregów promieniotwórczych: szereg uranowy (zaczynający się od ${}^{238}\text{U}$) oraz szereg aktynowy (zaczynający się od ${}^{235}\text{U}$).
+
+\subsection{Energia aktywacji dla izotopów uranu}
+
+Zjawisko rozszczepienia jądrowego można opisać wykorzystując model kroplowy. Aby doszło do rozszczepienia jądra, musi ono ulec deformacji na tyle dużej, aby siły odpychania kulombowskiego protonów pokonały siły jądrowe (siły napięcia powierzchniowego). Wysokość bariery potencjału, którą jądro musi pokonać, aby ulec rozszczepieniu, nazywamy energią aktywacji ($E_a$).
+
+Prawdopodobieństwo rozszczepienia jądra zależy od relacji między energią aktywacji a energią separacji neutronu ($S_n$), czyli energią wzbudzenia jądra po wychwycie neutronu. Zależność tę ilustruje rysunek \ref{fig:energia_aktywacji}. W przypadku badanej próbki zarejestrowane zostaną produkty rozszczepienia izotopu ${}^{235}\text{U}$, ponieważ po wychwyceniu neutronu termicznego powstaje jądro złożone ${}^{236}\text{U}$, które posiada wystarczającą energię wzbudzenia do przekroczenia bariery rozszczepienia ($S_n > E_a$).
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{energia_aktywacji.pdf}
+\caption{Wartości energii aktywacji ($E_a$) i energii separacji neutronu ($S_n$)
+dla izotopów uranu.}\label{fig:energia_aktywacji}
+\end{figure}
+
+\subsection{Oszacowanie energii wydzielanej w rozszczepieniu jądra \texorpdfstring{$^{236}$U}{236U}}
+
+Energię wyzwalaną w procesie rozszczepienia oszacowano, rozważając energie spoczynkowe elementów układu przed i po rozpadzie. Zakładając uproszczony model, w którym jądro uranu ${}^{236}_{92}\text{U}$ ulega symetrycznemu podziałowi na dwa identyczne fragmenty, którymi są jądra palladu ${}^{118}_{46}\text{Pd}$, reakcję możemy zapisać jako:
+
+
+Aby wyznaczyć energię reakcji, obliczamy energię spoczynkową jądra macierzystego oraz produktów, korzystając z ich mas atomowych: 
+\begin{equation}
+    m({}^{236}\text{U}) \approx 236{,}046 \text{ u},\quad m({}^{118}\text{Pd}) \approx 117{,}919 \text{ u}.
+\end{equation}
+
+Energie spoczynkowe ($E = mc^2$) wynoszą zatem:
+\begin{equation}
+E(^{236}\text{U}) \approx 219\,877 \text{ MeV},\quad E({}^{118}\text{Pd})  \approx 109\,842 \text{ MeV}.
+\end{equation}
+
+Energia wyzwolona w procesie jest różnicą energii spoczynkowej jądra uranu i sumy energii spoczynkowych obu fragmentów i wynosi w przybliżeniu $193 \text{ MeV}$.
+
+Otrzymana wynik przysłuży się w celu odpowiedniego dobrania zakresu pomiarowego rozpadu jądra uranu.
+
+\subsection{Rozkład masowy fragmentów rozszczepienia}
+
+Masy fragmentów wyznacza się, zakładając pomijalny pęd początkowy układu oraz zerowy wypadkowy pęd wyemitowanych neutronów. Z zasady zachowania pędu:
+\begin{equation}
+M_L V_L = M_H V_H.
+\end{equation}
+
+Przeszktałcając powyższe równanie i korzystając ze wzoru na energię kinetyczną, otrzymujemy:
+
+\begin{equation}
+M_L E_L = M_H E_H
+\end{equation}
+
+Znając masę rozszczepianego jądra oraz średnią liczbę emitowanych neutronów ($\nu \approx 2{,}4$), przyjmujemy, że suma mas fragmentów rozszczepienia wynosi:
+
+\begin{equation}
+M_L + M_H = 233{,}6 \text{ u}.
+\end{equation}
+
+Natomiast stosunek macierzystegoch mas fragmentów rozszczepienia wynosi:
+
+\begin{equation}
+R = \frac{M_H}{M_L} = \frac{E_L}{E_H}.
+\end{equation}
+
+%%%%%%%%%%%%%%
+\section{Układ eksperymentalny}
+
+\subsection{Źródło neutronów i moderator}
+W eksperymencie wykorzystano izotopowe źródło neutronów typu Pu-Be (plutonowo-berylowe). Neutrony są emitowane w wyniku reakcji jądrowej, w której cząstki $\alpha$ pochodzące z rozpadu izotopu ${}^{239}Pu$ bombardują jądra berylu:
+\begin{equation}
+{}_{4}^{9}Be + \alpha \rightarrow {}_{6}^{12}C^* \rightarrow {}_{6}^{12}C + n
+\end{equation}
+Źródło to emituje neutrony prędkie o widmie ciągłym w zakresie 0--10 MeV, ze średnią energią wynoszącą około 4 MeV. Aby umożliwić zajście reakcji rozszczepienia ${}^{235}U$, konieczne jest spowolnienie neutronów do energii termicznych ($E \approx 25$ meV). W tym celu źródło umieszczone jest wewnątrz cylindrycznego bloku parafiny, który pełni funkcję moderatora.
+
+\subsection{Tarcza uranowa i komora próżniowa}
+Badana próbka to tarcza uranowa o grubości $200~\mu g/cm^{2}$ i promieniu 5 mm. Składa się ona z mieszaniny izotopów: ${}^{238}U$ (89\%), ${}^{235}U$ (10\%) oraz ${}^{234}U$ (1\%). Tarcza wraz z detektorem znajduje się w komorze próżniowej, w której ciśnienie jest obniżane za pomocą pompy próżniowej.
+
+\subsection{Detektor}
+Do rejestracji cząstek naładowanych (zarówno cząstek $\alpha$, jak i fragmentów rozszczepienia) wykorzystano półprzewodnikowy detektor krzemowy z barierą powierzchniową. Detektor zbudowany jest ze złącza Au-Si spolaryzowanego w kierunku zaporowym, co tworzy obszar zubożony wrażliwy na promieniowanie.
+
+\subsection{Układ elektroniczny}
+Sygnał z detektora jest przetwarzany przez układ elektroniczny, który składa się z następujących elementów:
+
+\noindent
+\textbf{Przedwzmacniacz ładunkowy:} Jest pierwszym elementem elektronicznym do którego kierowany jest sygnał detektora. Głównym elementem tego układu jest wzmacniacz całkujący, który całkuje ładunek wytworzony w detektorze i daje impuls napięciowy.
+
+\noindent
+\textbf{Wzmacniacz liniowy:} Służy do wzmocnienia sygnału oraz jego ukształtowania za pomocą układu różniczkująco-całkującego CR-RC. Pozwala to na zminimalizowanie szumów oraz redukcję efektu nakładania się impulsów.
+
+\noindent
+\textbf{Analizator wielokanałowy (MCA):} Kluczowym elementem jest tutaj przetwornik analogowo-cyfrowy (ADC), który mierzy amplitudę nadchodzących impulsów i zlicza je w odpowiednich kanałach. W ten sposób tworzony jest histogram, który reprezentuje widmo energii rejestrowanych cząstek.
+
+
+%%%%%%%%%%%%%%
+\section{Przebieg pomiarów}
+
+\subsection{Optymalizacja zdolności rozdzielczej}
+
+Energetyczna zdolność rozdzielcza układu, wyrażana jako szerokość połówkowa linii (FWHM), zależy od czasu kształtowania impulsu we wzmacniaczu liniowym. W celu wyboru optymalnych ustawień przeprowadzono pomiary FWHM sygnału z generatora dla trzech czasów kształtowania: $0,5~\mu s$, $1~\mu s$ oraz $2~\mu s$. Uzyskano następujące wyniki:
+\begin{itemize}
+    \item $0,5~\mu s$: FWHM $\approx 16,5$ kanału,
+    \item $1~\mu s$: FWHM $\approx 16,3$ kanału,
+    \item $2~\mu s$: FWHM $\approx 19,8$ kanału.
+\end{itemize}
+
+Do dalszych pomiarów przyjęto czas kształtowania $0,5~\mu s$, mimo że dla czasu $1~\mu s$ uzyskano porównywalną zdolność rozdzielczą. Wynik dla $2~\mu s$ był wyraźnie gorszy.
+
+\subsection{Kalibracja energetyczna dla pomiaru cząstek \texorpdfstring{$\alpha$}{alfa}}
+
+Kalibracja energetyczna miała na celu ustalenie relacji pomiędzy numerem kanału analizatora wielokanałowego a energią zarejestrowanych cząstek. Do przeprowadzenia tej procedury wykorzystano widmo promieniowania własnego tarczy uranowej. Jako punkt odniesienia wybrano linię pochodzącą od izotopu ${}^{234}U$, który charakteryzuje się najwyższą aktywnością alfa spośród izotopów obecnych w badanej próbce.
+
+Na podstawie danych z bazy Nuclear Data Services Międzynarodowej Agencji Energii Atomowej \cite{iaea}, główne linie energetyczne promieniowania $\alpha$ dla izotopu ${}^{234}U$ to:
+\begin{equation}
+    4,775 \text{~MeV} (\text{intensywność: } 71,38\%),\quad 4,722 \text{~MeV} (\text{intensywność: } 28,43\%).
+\end{equation}
+
+Wyznaczona na tej podstawie średnia ważona energia cząstek $\alpha$ wynosi 4,76 MeV.
+
+W procedurze pomiarowej przyjęto interpretację, w której wskazania potencjometru na generatorze impulsów odpowiadają bezpośrednio energii wyrażonej w MeV. Ustawiono potencjometr na wartość odpowiadającą wyliczonej średniej energii (4,76), a następnie wyregulowano wzmocnienie układu w taki sposób, aby pik pochodzący z generatora pokrywał się z maksimum widma promieniowania $\alpha$ izotopu ${}^{234}U$.
+
+Po kalibracji urządzeń wykonano pomiary widma ustawiając generator kolejno na: 3 MeV, 3,5 MeV, 4 MeV, 5 MeV, 5,5 MeV oraz 6 MeV. Na ich podstawie wyznaczono zależność energii od numeru kanału analizatora wielokanałowego.
+
+\subsection{Pomiar widma energii cząstek \texorpdfstring{$\alpha$}{alfa}}
+
+\subsection{Kalibracja energetyczna dla pomiaru fragmentów rozszczepienia}
+
+\subsection{Pomiar widma energii fragmentów rozszczepienia}
+
+
+%%%%%%%%%%%%%%
+\section{Analiza danych}
+
+\subsection{Kalibracja energetyczna dla pomiaru cząstek \texorpdfstring{$\alpha$}{alfa}}
+
+\subsection{Analiza widma energii cząstek \texorpdfstring{$\alpha$}{alfa}}
+
+\subsection{Kalibracja energetyczna dla pomiaru fragmentów rozszczepienia}
+
+\subsection{Analiza widma energii fragmentów rozszczepienia}
+
+\subsection{Wyznaczenia strumienia neutronów}
+
+\FloatBarrier
+\section{Podsumowanie}
+
+\begin{thebibliography}{9}
+
+\bibitem{instrukcja}
+Instrukcja do ćwiczenia J11: \emph{Pomiar widma energetycznego fragmentów rozszczepienia ${}^{236}U$ wywołanego neutronami termicznymi}, Wydział Fizyki UW.
+
+\bibitem{iaea}
+International Atomic Energy Agency, \textit{Livechart of Nuclides}, dostępny online: \url{https://www-nds.iaea.org/} [dostęp: 09.01.2026].
+\end{thebibliography}
+
+\end{document}

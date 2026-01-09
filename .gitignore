@@ -3,3 +3,10 @@
 *.png
 *.venv
 *.ipynb_checkpoints
+*.aux
+*.fdb_latxmk
+*.fls
+*.log
+*.out
+*.toc
+*.synctex.gz
